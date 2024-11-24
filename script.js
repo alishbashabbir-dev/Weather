@@ -3,24 +3,6 @@ const axios = require("axios");
 const path = require("path");
 const app = express();
 const apiKey = "a26cf2cf262cc5bd34f1bf6bea634354"; // OpenWeatherMap API Key
-const mongoose = require("mongoose");
-
-// Connect to MongoDB
-let db;
-mongoose.connect("mongodb://127.0.0.1:27017")
-    .then(() => console.log("MongoDB connected successfully"))
-    .catch((err) => console.error("MongoDB connection error:", err));
-
-// Schema and model definition (for example)
-const weatherSchema = new mongoose.Schema({
-    city: String,
-    temperature: Number,
-    description: String,
-    humidity: Number,
-});
-
-const Weather = mongoose.model("Weather", weatherSchema);
-
 // Serve static files from the "public" folder
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -56,7 +38,7 @@ app.get("/weather", async (req, res) => {
         }
 
         // Construct API URL and fetch weather data
-        const weatherUrl = https://api.openweathermap.org/data/2.5/weather;
+        const weatherUrl = "https://api.openweathermap.org/data/2.5/weather";
         const response = await axios.get(weatherUrl, {
             params: { q: cityName, appid: apiKey, units: "metric" },
         });
