@@ -2,9 +2,6 @@ const favCityList = document.querySelector("#favCities"); // Button for Favorite
 const favoritesContainer = document.querySelector("#favoritesContainer"); // Div for displaying favorite cities
 
 
-// When on Favs.html, fetch and display the favorite cities
-// Fetching the list of favorite cities from the server
-// Fetching the list of favorite cities from the server
 window.onload = () => {
     const favoritesContainer = document.querySelector("#favoritesList");
 
