@@ -11,21 +11,6 @@
     color: #072340; /* Light gray text for contrast */
 }
 
-h1 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #38bdf8; /* Sky blue for the title */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-}
 
 /* Styling for each card */
 .fav_city {
