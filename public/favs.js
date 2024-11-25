@@ -1,7 +1,6 @@
 const favCityList = document.querySelector("#favCities"); // Button for Favorites
 const favoritesContainer = document.querySelector("#favoritesContainer"); // Div for displaying favorite cities
-
-
+//here is new code
 window.onload = () => {
     const favoritesContainer = document.querySelector("#favoritesList");
 
